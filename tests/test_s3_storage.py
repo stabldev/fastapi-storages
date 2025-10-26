@@ -4,7 +4,7 @@ from pathlib import Path
 import boto3
 import pytest
 from botocore.exceptions import ClientError
-from moto import mock_s3
+from moto import mock_aws as mock_s3
 
 from fastapi_storages import S3Storage, StorageFile
 
