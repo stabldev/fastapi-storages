@@ -27,9 +27,6 @@ classifiers = [
   "Topic :: Internet :: WWW/HTTP",
   "Typing :: Typed",
 ]
-dependencies = [
-  "boto3~=1.25",
-]
 dynamic = ["version"]
 
 [project.optional-dependencies]
@@ -37,6 +34,9 @@ full = [
   "Pillow>=10",
   "sqlalchemy>=1.4",
   "peewee>=3",
+]
+s3 = [
+    "boto3>=1.37.38",
 ]
 
 [project.urls]
